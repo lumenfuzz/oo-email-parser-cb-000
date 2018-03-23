@@ -16,6 +16,6 @@ class EmailParser
     raw_array.each do |email|
       clean_array << email if email != ""
     end
-    return clean_array
+    return clean_array.uniq
   end
 end
