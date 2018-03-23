@@ -10,7 +10,7 @@ class EmailParser
     @@text = text
   end
 
-  def self.parse
+  def parse
     array = @@text.split(/[ ,]/)
     return array
   end
