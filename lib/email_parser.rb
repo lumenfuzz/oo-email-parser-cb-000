@@ -11,7 +11,11 @@ class EmailParser
   end
 
   def parse
-    array = @@text.split(/[ ,]/)
-    return array
+    raw_array = @@text.split(/[ ,]/)
+    clean_array = []
+    raw_array.each do |email|
+      clean_array << email if email != ""
+    end
+    return clean_array
   end
 end
