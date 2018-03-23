@@ -3,13 +3,13 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class EmailParser
-  
+
   @@text = ""
-  
+
   def initialize(text)
     @@text = text
   end
-  
+
   def self.parse
     array = @@text.split(/[ ,]/)
     return array
